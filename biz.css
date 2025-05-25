@@ -1,0 +1,299 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  color: #1c1c1e;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.get-started {
+  background-color: #0056d2;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: #003b91;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e8f0fe;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #0056d2;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.hero-img {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.cta-buttons .btn {
+  margin: 10px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #0056d2;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #003b91;
+}
+
+.btn.secondary {
+  border: 2px solid #0056d2;
+  color: #0056d2;
+  background: none;
+}
+
+.btn.secondary:hover {
+  background-color: #0056d2;
+  color: #fff;
+}
+
+/* Features */
+.features {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.features .subtext {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+/* Integration Section */
+.integration {
+  background-color: #f1f3f5;
+  padding: 60px 5%;
+}
+
+.integration-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: left;
+}
+
+.integration-content img {
+  width: 300px;
+}
+
+.integration-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #ffffff;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.testimonial {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.03);
+}
+
+.testimonial .stars {
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #1c1c1e;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-logo {
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .hero-text {
+    flex: 1;
+    padding-right: 40px;
+  }
+
+  .hero-img {
+    flex: 1;
+  }
+
+  .integration-content {
+    flex-direction: row;
+  }
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contact Section */
+.contact {
+  background-color: #e8f0fe;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+form#contactForm {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input,
+form textarea {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+form button {
+  cursor: pointer;
+}
