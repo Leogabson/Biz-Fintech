@@ -44,14 +44,17 @@ bizfin/
 
 1. **Download or clone the repo**
    ```bash
-   git clone https://github.com/yourusername/bizfin.git
+   git clone https://github.com/leogabson/bizfin.git
    ```
+   
+2. **view on live website**
+   `https://biz-fintech.vercel.app`
 
-2. **Open the project**
+3. **Open the project**
    - Open `index.html` in a web browser
    - Ensure all images are in the same folder or adjust paths as needed
 
-3. **Edit as Needed**
+4. **Edit as Needed**
    - Change colors or layout in `biz.css`
    - Customize animations or logic in `script.js`
 
@@ -79,7 +82,7 @@ Use Chrome DevTools → Device Toolbar for responsive preview.
 
 ## 📌 Credits
 
-- Designed & Developed by [Your Name / Dev-Leogabson]
+- Designed & Developed by [ Dev-Leogabson]
 - Icons & images by user uploads and royalty-free sources
 
 ---
